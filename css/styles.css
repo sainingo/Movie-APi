@@ -1,0 +1,86 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2.4rem;
+    margin-left: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > li {
+    font-size: 1.7rem;
+    margin-right: 60px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container > h1 {
+    text-align: center;
+}
+
+.container .search-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px;
+}
+
+.search-input  > input {
+    width: 70%;
+    padding: 14px;
+    border: 1px solid rgb(34, 240, 188);
+    font-size: 1.2rem;
+}
+
+.search-input > button {
+    padding: 8px;
+    width: 8%;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: blueviolet;
+    background-color: bisque;
+}
+
+.movies-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.movie-row > img {
+    width: 80%;
+    height: 70%;
+    cursor: pointer;
+    transition: all 0.03s ease-in-out;
+    border-radius: 4px;
+}
+
+.movie-row > img:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+}
