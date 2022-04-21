@@ -40,7 +40,7 @@ ul > li {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin: 20px;
+    margin: 40px;
 }
 
 .search-input  > input {
@@ -63,11 +63,24 @@ ul > li {
 
 .movies-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 footer {
     text-align: center;
     padding: 20px;
     font-size: 1.3rem;
+}
+
+.movie-row > img {
+    width: 80%;
+    height: 70%;
+    cursor: pointer;
+    transition: all 0.03s ease-in-out;
+    border-radius: 4px;
+}
+
+.movie-row > img:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
 }
